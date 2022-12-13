@@ -1,1 +1,1 @@
-This readme is for the c function
+c functions
