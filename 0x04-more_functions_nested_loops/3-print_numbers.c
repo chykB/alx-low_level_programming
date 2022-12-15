@@ -1,16 +1,18 @@
 #include "main.h"
+
 /**
- * print_numbers - check for numbers 0 to 9
- *
- * Return: Always 0
+*print_numbers - print 0123456789
+* owned by Bwave ICT
+*Return: void
 */
+
 void print_numbers(void)
 {
-	int c;
+	char c;
 
-	for (i = 48; c <= 58; c++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		_putchar(c);
+	_putchar(c);
 	}
 	_putchar('\n');
 }
