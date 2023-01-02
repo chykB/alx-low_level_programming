@@ -22,4 +22,5 @@ unsigned int _strspn(char *s, char *accept)
 		else
 			return (z);
 	}
+		return (z);
 }
