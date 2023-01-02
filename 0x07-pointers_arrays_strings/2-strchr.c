@@ -4,6 +4,7 @@
  * @c: character to print
  *
  * @s: pointer to the character
+ * Return: pointer to the first character occurance
 */
 char *_strchr(char *s, char c)
 {
