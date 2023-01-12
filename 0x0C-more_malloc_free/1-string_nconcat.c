@@ -4,6 +4,7 @@
  * @s1: The first string
  * @s2: The second string
  * @n: Amount of byte
+ * Return: Null if functin fail
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
