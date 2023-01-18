@@ -1,4 +1,4 @@
-#include "function_pointers"
+#include "function_pointers.h"
 /**
  * int_index - return index of the first element
  * @array: pointer to array
@@ -10,7 +10,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i = 0;
 
-	if (size > o)
+	if (size > 0)
 	{
 		if (array != NULL && cmp != NULL)
 		{
