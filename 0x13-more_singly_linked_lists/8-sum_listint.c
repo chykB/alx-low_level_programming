@@ -4,7 +4,7 @@
  * @head: the head poiter
  * Return: sum all data
 */
-int sum_listint(listint_ *head)
+int sum_listint(listint_t *head)
 {
 	int sum = 0;
 
