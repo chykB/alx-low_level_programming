@@ -1,26 +1,44 @@
 #include "main.h"
-/**
- * _strspn - function to find the length of the initial portion of a string
- * @s: initial portion
- * @accept: consist of bytes
- * Return: The num of bytes
-*/
-unsigned int _strspn(char *s, char *accept)
-{
-	int z = 0, x, y;
 
-	for (x = 0; s[x] != '\0'; x++)
+/**
+ * _strspn - Locates a character in a string
+ * @s: This is the main C string to be scanned.
+ * @accept: This is the string containing the list of characters to match in s
+ * Return: return count
+ **/
+
+unsigned int _strspn(char *s, char *accept)
+
+{
+	int i, j;
+	int count = 0;
+	char *str1, *str2;
+
+	str1 = s;
+	str2 = accept;
+
+	i = 0;
+	while (str1[i] != '\0') /*Declaring WHILE *s */
 	{
-		if (s[x] != 32)
+		j = 0;
+		while (str2[j] != '\0') /*Declaring WHILE *accept*/
 		{
-			for (y = 0; accept[y] != '\0'; y++)
+			if (str2[j] == str1[i]) /*Evaluate condition*/
 			{
-				if (s[x] == accept[y])
-					z++;
+				count++; /*count number*/
+				break;
 			}
+
+			j++;    /*add j+1*/
 		}
-		else
-			return (z);
+
+		if (s[i] != accept[j]) /*If aren't equals*/
+		{
+			break;
+		}
+
+		i++; /*add x+1*/
 	}
-		return (z);
+
+	return (count); /*return the value of count*/
 }
